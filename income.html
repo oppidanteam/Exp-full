@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <nav>
+            <div class="sidebar">
+        <img src="profile.png" alt="Profile Image" width="100">
+        <h2>Om Ingole</h2>
+        <a href="index.html">Dashboard</a>
+        <a href="income.html">Income</a>
+        <a href="expense.html">Expenses</a>
+        <a href="transaction.html">Transactions</a>
+    </div>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Add Income</h1>
+        <div class="form-container">
+            <input type="text" id="income-source" placeholder="Income Source">
+            <input type="number" id="income-amount" placeholder="Amount">
+            <button onclick="addIncome()">Add Income</button>
+        </div>
+        <div class="income-list">
+            <h2>Income</h2>
+            <ul id="income-list"></ul>
+        </div>
+        <div id="total-income" >  <h3>Total Income</h3>
+                <p>$310.23k</p>
+            </div>
+    <script src="app.js"></script>
+</body>
+</html>

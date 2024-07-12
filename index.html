@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="profile.png" alt="Profile Image" width="100">
+        <h2>Om Ingole</h2>
+        <a href="index.html">Dashboard</a>
+        <a href="income.html">Income</a>
+        <a href="expense.html">Expenses</a>
+        <a href="transaction.html">Transactions</a>
+    </div>
+    <div class="content">
+        <h1>Expense Tracker</h1>
+        <div class="summary">
+            <div id="current-balance">
+                <h3>Current Balance</h3>
+                <p>$183.6k</p>
+            </div>
+            <div id="total-income">
+                <h3>Total Income</h3>
+                <p>$310.23k</p>
+            </div>
+            <div id="total-expense">
+                <h3>Total Expense</h3>
+                <p>$126.63k</p>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="chart-container">
+                <canvas id="expense-pie-chart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="income-expense-line-chart"></canvas>
+            </div>
+        </div>
+        <div class="expense-list">
+            <h2 "color:black">Latest Transactions</h2>
+            <ul id="expense-list"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
